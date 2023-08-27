@@ -28,7 +28,12 @@ const Login: React.FC = () => {
 
   const finishIntro = async() => {
     setIntroSeen(true);
-    Preferences.set({key: INTRO_KEY, value: 'true'});
+    Preferences.set({ key: INTRO_KEY, value: 'true' });
+  }
+
+  const seeIntroAgain = () => {
+    setIntroSeen(false);
+    Preferences.remove({ key: INTRO_KEY });
   }
 
   return (
