@@ -1,10 +1,10 @@
 import { IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonInput, IonItem, IonPage, IonTitle, IonToolbar, IonButton, IonIcon, IonText, useIonRouter, IonButtons, IonImg } from '@ionic/react';
 import {logInOutline, personCircleOutline } from 'ionicons/icons';
 import Intro from '../components/Intro';
-import mainLogo from '../assets/app-logo.png';
-import logoName from '../assets/nuncmitto-name.png';
-import rocket from '../assets/landing-rocket.svg';
-import background from '../assets/intro-background.jpg';
+import mainLogo from '../assets/logo/app-logo.png';
+import logoName from '../assets/logos/nuncmitto-name.png';
+import rocket from '../assets/icons/landing-rocket.svg';
+import background from '../assets/images/intro-background.jpg';
 import React, { useState, useEffect } from 'react';
 import { Preferences } from '@capacitor/preferences';
 

@@ -61,10 +61,23 @@ ion-input.signup__form-input {
 }
 
 .signup__socials {
+  padding: 36px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
 .signup__socials-icon {
+  width: 62px;
+  height: 62px;
+  max-height: 62px;
+}
 
+.signup__socials-icon:nth-of-type(3) {
+  max-height: 36px;
+}
+
+.signup__socials-icon:nth-of-type(4) {
+  max-height: 36px;
 }

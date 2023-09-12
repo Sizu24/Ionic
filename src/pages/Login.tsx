@@ -1,8 +1,7 @@
-import { IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonButton, IonIcon, useIonRouter } from '@ionic/react';
+import { IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonButton, IonIcon, useIonRouter, IonImg, IonText, IonItem } from '@ionic/react';
 import {logInOutline, personCircleOutline } from 'ionicons/icons';
 import Intro from '../components/Intro';
-import mainLogo from '../assets/app-logo.png';
-import background from '../assets/intro-background.jpg';
+import mainLogo from '../assets/logos/nuncmitto-icon.png';
 import React, { useState, useEffect } from 'react';
 import { Preferences } from '@capacitor/preferences';
 
@@ -43,43 +42,42 @@ const Login: React.FC = () => {
     <>
     {!introSeen ? <Intro onFinish={finishIntro}/> : (
       <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Login</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+        <IonHeader>
+          <IonToolbar>
+            <IonTitle>Login</IonTitle>
+          </IonToolbar>
+        </IonHeader>
 
-      <IonContent className="ion-padding" scrollY={true}>
-        <div className="ion-text-center ion-padding">
-          <img className='login__image' src={background} alt="Logo" />
-        </div>
-        <IonCard>
-          <IonCardContent className="intro-cta__container">
-            {/* <form onSubmit={handleLogin}>
-              <IonInput type="email" label={"Email"} labelPlacement="floating" placeholder="email@domain.com" fill="outline"></IonInput>
-              <IonInput className="ion-margin-top" type="password" label={"Password"} labelPlacement="floating" placeholder="" fill="outline"></IonInput>
-              <IonButton routerLink="/sign-up" color={"secondary"} className="ion-margin-top" type="submit" expand="block">
-                Sign Up
-                <IonIcon icon={personCircleOutline} slot="end"></IonIcon>
-              </IonButton>
-              <IonButton routerLink="/login" color={"secondary"} className="ion-margin-top" type="submit" expand="block">
-                Login
-                <IonIcon icon={logInOutline} slot="end"></IonIcon>
-              </IonButton>
-            </form> */}
-
-              <IonButton routerLink="/sign-up" color={"secondary"} className="ion-margin-top intro-cta__button" type="submit" expand="block">
-                Sign Up
-                <IonIcon icon={personCircleOutline} slot="end"></IonIcon>
-              </IonButton>
-              <IonButton routerLink="/login" color={"transparent"} className="ion-margin-top intro-cta__button" type="submit" expand="block">
-                Login
-                <IonIcon icon={logInOutline} slot="end"></IonIcon>
-              </IonButton>
-          </IonCardContent>
-        </IonCard>
-      </IonContent>
-      <IonFooter>
+        <IonContent className="login ion-no-padding ion-no-margin">
+          <IonCard className="login__card ion-no-margin">
+            <IonCardContent className="login__card-content ion-text-center">
+              <IonImg className="login__logo" src={mainLogo}></IonImg>
+              <form className="login__form ion-text-start" onSubmit={handleLogin}>
+                <IonInput className="login__form-input ion-margin-top" type="email" label={"Email"} labelPlacement="stacked" placeholder="email@mail.com"></IonInput>
+                <div className="login__form-group">
+                  <IonInput className="login__form-input ion-margin-end ion-margin-top" type="password" label={"Password"} labelPlacement="stacked" placeholder="**********"></IonInput>
+                  <IonButton routerLink="/login" color={"primary"} className="form__button ion-margin-top" type="submit" expand="block">
+                    Login
+                  </IonButton>
+                </div>
+              </form>
+              <IonButton className="form__button--secondary" fill="clear">Forgot Password?</IonButton>
+              <div className="login-info-box">
+                <IonText className="login-info-box__body">
+                  “A wonderful gift may not be wrapped as you expect.”
+                </IonText>
+                <IonText className="login-info-box__body">
+                  Jonathan Lockwood Huie
+                </IonText>
+              </div>
+              <div className="login-group">
+              <IonText>New User?</IonText>
+              <IonButton fill="clear">Sign Up</IonButton>
+              </div>
+            </IonCardContent>
+          </IonCard>
+        </IonContent>
+        <IonFooter>
           <IonToolbar>Toolbar Footer</IonToolbar>
         </IonFooter>
       </IonPage>

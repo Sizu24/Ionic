@@ -5,7 +5,7 @@ import React from 'react';
 import 'swiper/css';
 import './intro.css';
 
-import mainLogo from '../assets/app-logo.png';
+import mainLogo from '../assets/logos/app-logo.png';
 
 interface ContainerProps {
   onFinish: () => void;

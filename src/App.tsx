@@ -23,6 +23,7 @@ import './theme/variables.css';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
+import Homepage from './pages/Homepage';
 
 setupIonicReact();
 
@@ -34,6 +35,8 @@ const App: React.FC = () => (
           <Landing />
         </Route>
         <Route component={SignUp} path="/sign-up" exact />
+        <Route component={Login} path="/login" exact />
+        <Route component={Homepage} path="/home" exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
