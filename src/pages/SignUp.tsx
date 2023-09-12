@@ -1,7 +1,11 @@
-import { IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonButton, IonIcon, IonBackButton, IonButtons } from '@ionic/react';
+import { IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonInput, IonItem, IonPage, IonTitle, IonToolbar, IonButton, IonIcon, IonBackButton, IonButtons, IonImg, IonItemDivider, IonText, IonItemGroup } from '@ionic/react';
 import { checkmarkDoneOutline } from 'ionicons/icons';
-import logo from '../assets/logo.png';
 import React from 'react';
+
+import './signup.css';
+
+import logo from '../assets/app-logo.png';
+
 
 const SignUp: React.FC = () => {
 
@@ -21,17 +25,32 @@ const SignUp: React.FC = () => {
       </IonToolbar>
     </IonHeader>
 
-    <IonContent className="ion-padding" scrollY={false}>
-      <IonCard>
-        <IonCardContent>
-          <form onSubmit={handleSignUp}>
-            <IonInput type="email" label={"Email"} labelPlacement="floating" placeholder="email@domain.com" fill="outline"></IonInput>
-            <IonInput className="ion-margin-top" type="password" label={"Password"} labelPlacement="floating" placeholder="" fill="outline"></IonInput>
-            <IonButton routerLink="/login" color={"secondary"} className="ion-margin-top" type="submit" expand="block">
+    <IonContent className="signup ion-no-padding ion-no-margin">
+      <IonCard className="signup__card ion-no-margin">
+        <IonCardContent className="signup__card-content ion-text-center">
+          <IonImg src={logo}></IonImg>
+          <form className="signup__form ion-text-start" onSubmit={handleSignUp}>
+            <div className="signup__form-group">
+              <IonInput className="signup__form-input" type="text" label={"First Name"} labelPlacement={"stacked"} placeholder="Mari"></IonInput>
+              <IonInput className="signup__form-input" type="text" label={"Last Name"} labelPlacement={"stacked"} placeholder="Chasie"></IonInput>
+            </div>
+            <IonInput className="signup__form-input ion-margin-top" type="email" label={"Email"} labelPlacement="stacked" placeholder="email@mail.com"></IonInput>
+            <div className="signup__form-group">
+              <IonInput className="signup__form-input ion-margin-top" type="text" label={"Country"} labelPlacement="stacked" placeholder="+1 (US)"></IonInput>
+              <IonInput className="signup__form-input ion-margin-top" type="tel" label={"Mobile Number"} labelPlacement="stacked" placeholder="123-456-7890"></IonInput>
+            </div>
+            <IonInput className="signup__form-input ion-margin-top" type="password" label={"Password"} labelPlacement="stacked" placeholder="**********"></IonInput>
+            <IonButton routerLink="/login" color={"primary"} className="ion-margin-top" type="submit" expand="block">
               Sign Up
-              <IonIcon icon={checkmarkDoneOutline} slot="end"></IonIcon>
             </IonButton>
           </form>
+          <IonText className="signup__body">or connect with</IonText>
+          <IonItemGroup className="signup__socials">
+            <IonIcon className="signup__socials-icon"></IonIcon>
+            <IonIcon className="signup__socials-icon"></IonIcon>
+            <IonIcon className="signup__socials-icon"></IonIcon>
+            <IonIcon className="signup__socials-icon"></IonIcon>
+          </IonItemGroup>
         </IonCardContent>
       </IonCard>
     </IonContent>

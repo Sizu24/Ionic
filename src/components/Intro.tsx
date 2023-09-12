@@ -5,8 +5,7 @@ import React from 'react';
 import 'swiper/css';
 import './intro.css';
 
-import logo from '../assets/logo.png';
-import mainLogo from '../assets/main-logo.png';
+import mainLogo from '../assets/app-logo.png';
 
 interface ContainerProps {
   onFinish: () => void;
@@ -22,7 +21,7 @@ const Intro: React.FC<ContainerProps>= ({onFinish}) => {
   return (
     <Swiper>
       <SwiperSlide>
-        <img src={logo} alt="logo" />
+        <img src={mainLogo} alt="logo" />
         <IonText>
           <h3>Build apps with ionic component</h3>
         </IonText>

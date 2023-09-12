@@ -1,6 +1,8 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Shrikhand&display=swap');
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -74,6 +76,9 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-font-family-primary: 'Shrikhand', cursive;
+  --ion-font-family-secondary: 'Poppins', san-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,12 +88,12 @@ http://ionicframework.com/docs/theming/ */
    */
 
   body {
-    --ion-color-primary: #428cff;
-    --ion-color-primary-rgb: 66,140,255;
+    --ion-color-primary: #2559DE;
+    --ion-color-primary-rgb: 37,89,222;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
-    --ion-color-primary-shade: #3a7be0;
-    --ion-color-primary-tint: #5598ff;
+    --ion-color-primary-shade: #214ec3;
+    --ion-color-primary-tint: #3b6ae1;
 
     --ion-color-secondary: #50c8ff;
     --ion-color-secondary-rgb: 80,200,255;

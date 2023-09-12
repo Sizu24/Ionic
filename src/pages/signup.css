@@ -1,0 +1,70 @@
+.signup {
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.signup__card {
+  box-shadow: none;
+}
+
+.signup__card-content {
+  background-color: #FFFFFF;
+  padding: 0;
+}
+
+.signup__form {
+  padding: 60px;
+  background-color: #FFFFFF;
+}
+
+.signup__form-group {
+  display: flex;
+  background-color: #FFFFFF;
+}
+
+ion-input.signup__form-input {
+  gap: 0;
+  background-color: #FFFFFF;
+  padding: 0;
+  border: 0;
+  --color: var(--2, #2B2D36);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 0.5px solid var(--6, #E3E3E3);
+  --placeholder-color: #B5B5B5;
+}
+
+.signup__body {
+  position: relative;
+}
+
+.signup__body::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #E3E3E3;
+  top: 10px;
+  left: -70px;
+}
+
+.signup__body::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #E3E3E3;
+  top: 10px;
+  right: -70px;
+}
+
+.signup__socials {
+  display: flex;
+  gap: 20px;
+}
+
+.signup__socials-icon {
+
+}
