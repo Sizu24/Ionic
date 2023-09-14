@@ -7,7 +7,7 @@
   position: relative;
   padding: 0 46px;
   width: 100%;
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
 }
 
 .landing__title {
@@ -28,13 +28,13 @@
 
 .landing__card {
   position: absolute;
-  bottom: -255px;
+  bottom: -160px;
   padding: 35px;
   border-top-left-radius: 27px;
   border-top-right-radius: 27px;
   border-bottom-left-radius: 57px;
   border-bottom-right-radius: 57px;
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
 
   .landing-cta__container .landing__subhead {
     font-family: Shrikhand;
@@ -43,7 +43,7 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    background: var(--9, linear-gradient(108deg, #91C5F6 5.98%, #2559DE 77.74%));
+    background: var(--9, linear-gradient(108deg, var(--ion-color-secondary) 5.98%, var(--ion-color-primary) 77.74%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -55,7 +55,7 @@
   max-height: 50px;
   max-width: 175px;
   overflow: hidden;
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   color: #FFFFFF;
 }
 
@@ -79,8 +79,8 @@
 
 
 .landing-cta__button:nth-of-type(2) {
-  color: 2B2D36;
-  background-color: #FFFFFF;
+  color: #2B2D36;
+  background-color: transparent;
   border: 1px solid #2559DE;
 }
 
