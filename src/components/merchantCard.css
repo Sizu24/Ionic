@@ -2,11 +2,11 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  margin: 0;
+  margin: 0 0 10px 0;
+  padding: 20px;
   height: 368px;
   width: 100%;
   border-radius: 12px;
-  padding: 20px;
 }
 
 .merchant-card__icon:nth-child(1) {

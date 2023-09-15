@@ -8,6 +8,7 @@ import './merchant.css';
 import './globals.css';
 import MerchantCard from '../components/MerchantCard';
 import MerchantMenu from '../components/MerchantMenu';
+import FloatingCart from '../components/FloatingCart';
 
 const Merchant: React.FC = () => {
 
@@ -19,12 +20,13 @@ const Merchant: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       
-      <IonContent className="ion-padding">
+      <IonContent className="merchant-content on-padding">
         <div className='container'>
           <Header leftIconType="icon" leftIcon={chevronBack} rightIconType="icon" rightIcon={bagHandle} />
           <MerchantCard />
         </div>
         <MerchantMenu />
+        <FloatingCart />
       </IonContent>
     </IonPage>
   );
