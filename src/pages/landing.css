@@ -43,7 +43,7 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    background: var(--9, linear-gradient(108deg, var(--ion-color-secondary) 5.98%, var(--ion-color-primary) 77.74%));
+    background: var(--9, linear-gradient(108deg, #91C5F6 5.98%, #2559DE 77.74%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -1,0 +1,104 @@
+.merchant-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  height: 368px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.merchant-card__icon:nth-child(1) {
+  position: absolute;
+  top: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  width: 22px;
+  height: 20px;
+  z-index: 1;
+}
+
+.merchant-card__icon:nth-child(2) {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+.merchant-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.merchant-info {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 16px 0 12px 0;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(2.5px);
+}
+
+.merchant-info__logo-container {
+  position: absolute;
+  top: -140px;
+  margin: 0 auto;
+  width: 154px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.merchant-info__logo {
+
+}
+
+.merchant-info__title h2 {
+  margin: 0;
+  padding-bottom: 8px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  color: #252525;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.merchant-info__body p {
+  margin: 0 0 0px 0;
+  color: var(--5, #B5B5B5);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.merchant-info__data p {
+  margin: 5px 0;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.merchant-info__data-icon {
+  z-index: 1;
+}

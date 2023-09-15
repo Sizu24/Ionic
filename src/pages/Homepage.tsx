@@ -1,13 +1,14 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonText, IonInput, IonImg, IonButton, IonItemGroup, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCardSubtitle } from '@ionic/react';
+import React from 'react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonAvatar, IonText, IonInput, IonImg, IonButton, IonItemGroup, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCardSubtitle, IonItem } from '@ionic/react';
+import { searchOutline, optionsOutline } from 'ionicons/icons';
 import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 
-import React from 'react';
-
 import './homepage.css';
-import './header.css';
 import './section.css';
+import './globals.css';
 
 import logoName from '../assets/logos/nuncmitto-name.png';
+import RestaurantsSlider from '../components/RestaurantsSlider';
 
 const Homepage: React.FC = () => {
 
@@ -21,8 +22,15 @@ const Homepage: React.FC = () => {
       </IonHeader>
 
       <IonContent className="home-content">
-        <div className="home-container">
-          <IonImg className="header__logo" src={logoName} alt="Logo"></IonImg>
+        <div className="home-container container">
+          <IonItemGroup className="home-header header">
+            <IonAvatar className="home-header__avatar">
+              <IonImg className="home-header__avatar-image" src="https://via.placeholder.com/28x28" alt="Logo"></IonImg>
+            </IonAvatar>
+            <IonImg className="home-header__logo header__logo" src={logoName} alt="Logo"></IonImg>
+            <IonImg className="home-header__icon" src="https://via.placeholder.com/24x24" alt="Logo"></IonImg>
+          </IonItemGroup>
+
           <Swiper pagination={true} spaceBetween={"30"} className="hero-swiper">
             <SwiperSlide className="hero-swiper__slide">
             <div className="hero-info-box">
@@ -53,6 +61,8 @@ const Homepage: React.FC = () => {
           </Swiper>
           <form className="home-form">
             <IonInput className="home-form__input ion-margin-bottom ion-margin-top" name="food-search" type="text" placeholder='Search food and restaurants'></IonInput>
+            <IonIcon className="home-form__input-icon home-form__input-icon--left" icon={searchOutline}></IonIcon>
+            <IonIcon className="home-form__input-icon home-form__input-icon--right" icon={optionsOutline}></IonIcon>
           </form>
           <IonText className="home__headline">one place, all your favorites!</IonText>
           <IonButton fill="clear" className="home__button">
@@ -62,46 +72,11 @@ const Homepage: React.FC = () => {
             <IonText className="section__title ion-padding">Top Restaurants Near By</IonText>
             <IonButton fill="clear">View All</IonButton>
           </IonItemGroup>
-
-          <Swiper slidesPerView={1.25} spaceBetween={"20"} className="card-swiper">
-            <SwiperSlide>
-              <IonCard className="home-card ion-text-left">
-                <div className="home-card__media">
-                  <img className="home-card__image" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-                </div>
-                <div className="home-card__content">
-                  <IonCardHeader className='home-card__header'>
-                    <IonCardTitle className="home-card__title">Koreana</IonCardTitle>
-                  </IonCardHeader>
-                  <IonItemGroup className="home__text-group">
-                    <IonCardContent className="home-card__body">Basco Bi Bim Bap, Teri...</IonCardContent>
-                    <IonCardContent className="home-card__data">$25-$65</IonCardContent>
-                  </IonItemGroup>
-                </div>
-              </IonCard>
-            </SwiperSlide>
-            <SwiperSlide>
-              <IonCard className="home-card ion-text-left">
-                <div className="home-card__media">
-                  <img className="home-card__image" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-                </div>
-                <div className="home-card__content">
-                  <IonCardHeader className='home-card__header'>
-                    <IonCardTitle className="home-card__title">Koreana</IonCardTitle>
-                  </IonCardHeader>
-                  <IonItemGroup className="home__text-group">
-                    <IonCardContent className="home-card__body">Basco Bi Bim Bap, Teri...</IonCardContent>
-                    <IonCardContent className="home-card__data">$25-$65</IonCardContent>
-                  </IonItemGroup>
-                </div>
-              </IonCard>
-            </SwiperSlide>
-          </Swiper>
-
+          <RestaurantsSlider />
           <IonItemGroup className="home-shortcuts ion-padding">
-            <img className="home-shortcuts__icon" src="" alt="" />
-            <img className="home-shortcuts__icon" src="" alt="" />
-            <img className="home-shortcuts__icon" src="" alt="" />
+            <IonImg className="home-shortcuts__icon" src="https://via.placeholder.com/24x24" alt="" />
+            <IonImg className="home-shortcuts__icon" src="https://via.placeholder.com/24x24" alt="" />
+            <IonImg className="home-shortcuts__icon" src="https://via.placeholder.com/24x24" alt="" />
           </IonItemGroup>
         </div>
       </IonContent>

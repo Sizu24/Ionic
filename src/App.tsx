@@ -24,6 +24,7 @@ import Landing from './pages/Landing';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Homepage from './pages/Homepage';
+import Merchant from './pages/Merchant';
 
 setupIonicReact();
 
@@ -37,6 +38,7 @@ const App: React.FC = () => (
         <Route component={SignUp} path="/sign-up" exact />
         <Route component={Login} path="/login" exact />
         <Route component={Homepage} path="/home" exact />
+        <Route component={Merchant} path="/merchant" exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

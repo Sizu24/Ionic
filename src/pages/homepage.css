@@ -3,7 +3,37 @@
 }
 
 .home-container {
-  padding: 0 36px;
+
+}
+
+.home-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-header__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.home-header__avatar-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.home-header__logo {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.home-header__icon {
+  width: 24px;
+  height: 24px;
 }
 
 .home-content {
@@ -41,7 +71,6 @@ max-height: 165px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  word-break: ;
 }
 
 .hero-info-box__text:nth-of-type(1) {
@@ -59,7 +88,7 @@ max-height: 165px;
 }
 
 .home-form {
-
+  position: relative;
 }
 
 .home-form__input {
@@ -67,6 +96,28 @@ max-height: 165px;
   border-radius: 8px;
   color: #B5B5B5;
 }
+
+.home-form__input-icon {
+  z-index: 2;
+  height: 24px;
+  width: 24px;
+}
+
+.home-form__input-icon--left {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  color: #B5B5B5;
+  ;
+}
+
+.home-form__input-icon--right {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  color: #2B2D36;
+}
+
 
 .home__headline {
   font-family: Poppins;
@@ -98,70 +149,6 @@ max-height: 165px;
   display: flex;
   justify-content: space-between;
   padding: 0;
-}
-
-.card-swiper {
-  max-height: 220px;
-}
-
-.home-card {
-  height: 100%;
-  max-width: 276px;
-  margin: 0;
-  box-shadow: none;
-}
-
-.home-card__media {
-  max-height: 148px;
-  overflow: hidden;
-}
-
-.home-card__image {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.home-card__content {
-  height: 100%;
-  padding: 8px 20px 12px 20px;
-  background-color: #FFFFFF;
-}
-
-.home-card__header {
-  padding: 0;
-}
-
-.home-card__title {
-  margin-bottom: 4px;
-  padding: 0;
-  color: var(--2, #2B2D36);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: capitalize;
-}
-
-.home-card__body {
-  padding: 0;
-  color: var(--5, #B5B5B5);
-  font-family: Poppins;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.home-card__data {
-  padding: 0;
-  color: var(--2, #2B2D36);
-  font-family: Poppins;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 
 .home-shortcuts {

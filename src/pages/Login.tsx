@@ -72,7 +72,7 @@ const Login: React.FC = () => {
               </div>
               <div className="login-group">
               <IonText>New User?</IonText>
-              <IonButton fill="clear">Sign Up</IonButton>
+              <IonButton  routerLink="/sign-up" fill="clear">Sign Up</IonButton>
               </div>
             </IonCardContent>
           </IonCard>
