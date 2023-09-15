@@ -1,5 +1,5 @@
 .floating-cart {
-  position: absolute;
+  position: fixed;
   left: 36px;
   right: 36px;
   bottom: 25px;
@@ -8,12 +8,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 12px;
-  background-color: #FFFFFF;
   border-radius: 12px;
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(3px);
 }
 
 .floating-cart__price {
-  --color: #2B2D36;
+  color: #2B2D36;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -23,10 +24,12 @@
 }
 
 .floating-cart__button {
+  margin: 0;
   color: var(--4, #FFF);
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  --border-radius: 8px;
 }

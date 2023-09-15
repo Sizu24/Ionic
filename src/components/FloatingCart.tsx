@@ -6,8 +6,8 @@ import './floatingCart.css';
 const FloatingCart: React.FC = () => {
   return (
     <div className="floating-cart">
-      <IonText>$20.50</IonText>
-      <IonButton>Checkout</IonButton>
+      <IonText className="floating-cart__price">$20.50</IonText>
+      <IonButton className="floating-cart__button">Checkout</IonButton>
     </div>
   );
 }
