@@ -1,0 +1,26 @@
+.menu {
+  padding: 40px 0;
+  border-radius: 20px;
+  background-color: #F4F4F4;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-nav__button {
+  color: #B5B5B5;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.menu-nav__button.active {
+  color: #2B2D36;
+  font-weight: 600;
+}

@@ -5,13 +5,14 @@ import Header from '../components/Header';
 import { star, walletOutline, heart, bagHandle, chevronBack, informationCircleOutline } from 'ionicons/icons';
 
 import './merchant.css';
+import './globals.css';
 import MerchantCard from '../components/MerchantCard';
 import MerchantMenu from '../components/MerchantMenu';
 
 const Merchant: React.FC = () => {
 
   return (
-    <IonPage>
+    <IonPage className="merchant">
       <IonHeader>
         <IonToolbar>
           <IonTitle>Merchant</IonTitle>
@@ -21,8 +22,8 @@ const Merchant: React.FC = () => {
       <IonContent className="ion-padding">
         <div className='container'>
           <Header leftIconType="icon" leftIcon={chevronBack} rightIconType="icon" rightIcon={bagHandle} />
+          <MerchantCard />
         </div>
-        <MerchantCard />
         <MerchantMenu />
       </IonContent>
     </IonPage>

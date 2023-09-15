@@ -12,17 +12,22 @@ interface HeaderProps {
   rightIcon: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ leftIconType, leftIcon, rightIconType,rightIcon }) => {
+const Header: React.FC<HeaderProps> = ({ leftIconType, leftIcon, rightIconType, rightIcon }) => {
+
+  function handleClick() {
+    console.log("hi");
+  }
+
   return (
     <IonItemGroup className="header">
       {leftIconType === 'image' 
         ? <IonImg className="header__icon" src="https://via.placeholder.com/24x24" alt="Logo" slot="start"></IonImg>
-        : <IonIcon className="header__icon" slot="start" icon={leftIcon}></IonIcon>
+        : <IonIcon className="header__icon" slot="start" icon={leftIcon} onClick={handleClick}></IonIcon>
       }
       <IonImg className="header__logo" src={logoName} alt="Logo"></IonImg>
       {rightIconType === 'image' 
         ? <IonImg className="header__icon" src="https://via.placeholder.com/24x24" alt="Logo" slot="end"></IonImg>
-        : <IonIcon className="header__icon" slot="end" icon={rightIcon}></IonIcon>
+        : <IonIcon className="header__icon" slot="end" icon={rightIcon} onClick={handleClick}></IonIcon>
       }
     </IonItemGroup>
   );
