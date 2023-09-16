@@ -1,8 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonItemGroup, IonAvatar, IonImg, IonIcon } from '@ionic/react';
 import React from 'react';
 
-import './header.css';
-
 import logoName from '../assets/logos/nuncmitto-name.png';
 
 interface HeaderProps {

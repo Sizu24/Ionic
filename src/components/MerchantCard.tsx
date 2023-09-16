@@ -2,8 +2,6 @@ import React from "react";
 import { IonCard, IonIcon, IonImg, IonText, IonItemGroup, IonCardContent } from "@ionic/react";
 import { star, walletOutline, heart, informationCircleOutline } from 'ionicons/icons';
 
-import './merchantCard.css';
-
 const MerchantCard: React.FC = () => {
   return (
     <IonCard className="merchant-card">

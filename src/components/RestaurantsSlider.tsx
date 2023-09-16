@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { IonCard, IonImg, IonCardHeader, IonCardTitle, IonItemGroup, IonCardContent } from '@ionic/react';
 import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 
-import './restaurantSlider.css';
-
 const RestaurantsSlider: React.FC = () => {
   const [restaurants, setRestaurants] = useState([{
     name: "Koreana",

@@ -4,8 +4,6 @@ import Header from '../components/Header';
 
 import { star, walletOutline, heart, bagHandle, chevronBack, informationCircleOutline } from 'ionicons/icons';
 
-import './merchant.css';
-import './globals.css';
 import MerchantCard from '../components/MerchantCard';
 import MerchantMenu from '../components/MerchantMenu';
 import FloatingCart from '../components/FloatingCart';

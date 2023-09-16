@@ -1,8 +1,6 @@
 import React from 'react';
 import { IonText, IonButton } from '@ionic/react';
 
-import './floatingCart.css';
-
 const FloatingCart: React.FC = () => {
   return (
     <div className="floating-cart">

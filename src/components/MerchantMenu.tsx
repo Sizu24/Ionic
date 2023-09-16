@@ -1,13 +1,12 @@
-import { IonContent, IonItemGroup, IonButton, IonText, IonCard, IonImg } from "@ionic/react";
+import { IonItemGroup, IonButton, IonText } from "@ionic/react";
 import React from "react";
 
-import './merchantMenu.css';
-import '../pages/globals.css';
 import MenuItem from "./MenuItem";
 
 const MerchantMenu: React.FC = () => {
   return (
     <div className="menu">
+      <div className="menu__punchout"></div>
       <div className="container">
         <IonItemGroup className="menu-nav">
           <IonButton className="menu-nav__button active ion-no-padding" fill="clear">Menu Items</IonButton>

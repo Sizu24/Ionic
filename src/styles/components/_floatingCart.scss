@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 12px;
+  padding: rem(10px 12px);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.90);
   backdrop-filter: blur(3px);
@@ -16,7 +16,7 @@
 .floating-cart__price {
   color: #2B2D36;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: rem(18px);
   font-style: normal;
   font-weight: 700;
   line-height: normal;

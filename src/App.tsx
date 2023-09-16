@@ -26,6 +26,8 @@ import SignUp from './pages/SignUp';
 import Homepage from './pages/Homepage';
 import Merchant from './pages/Merchant';
 
+import './styles/styles.scss';
+
 setupIonicReact();
 
 const App: React.FC = () => (

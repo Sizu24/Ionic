@@ -3,10 +3,6 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonAvata
 import { searchOutline, optionsOutline } from 'ionicons/icons';
 import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 
-import './homepage.css';
-import './section.css';
-import './globals.css';
-
 import logoName from '../assets/logos/nuncmitto-name.png';
 import RestaurantsSlider from '../components/RestaurantsSlider';
 

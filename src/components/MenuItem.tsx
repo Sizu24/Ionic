@@ -1,8 +1,6 @@
 import React from "react";
 import { IonText, IonCard, IonImg, IonItemGroup, IonButton } from "@ionic/react";
 
-import './menuItem.css';
-
 const MenuItem: React.FC = () => {
   return (
     <IonCard className="menu-item">
