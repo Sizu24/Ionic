@@ -5,8 +5,6 @@ import mainLogo from '../assets/logos/nuncmitto-icon.png';
 import React, { useState, useEffect } from 'react';
 import { Preferences } from '@capacitor/preferences';
 
-import './login.css';
-
 const INTRO_KEY = 'intro-seen';
 
 const Login: React.FC = () => {

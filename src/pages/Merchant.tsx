@@ -2,7 +2,7 @@ import { IonContent, IonCard, IonIcon, IonImg, IonText, IonHeader, IonPage, IonT
 import React from 'react';
 import Header from '../components/Header';
 
-import { star, walletOutline, heart, bagHandle, chevronBack, informationCircleOutline } from 'ionicons/icons';
+import { bagHandle, chevronBack } from 'ionicons/icons';
 
 import MerchantCard from '../components/MerchantCard';
 import MerchantMenu from '../components/MerchantMenu';

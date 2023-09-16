@@ -8,8 +8,6 @@ import background from '../assets/images/intro-background.jpg';
 import React, { useState, useEffect } from 'react';
 import { Preferences } from '@capacitor/preferences';
 
-import './landing.css';
-
 const INTRO_KEY = 'intro-seen';
 
 const Landing: React.FC = () => {

@@ -2,8 +2,6 @@ import { IonCard, IonCardContent, IonContent, IonFooter, IonHeader, IonInput, Io
 import { checkmarkDoneOutline } from 'ionicons/icons';
 import React from 'react';
 
-import './signup.css';
-
 import logo from '../assets/logos/app-logo.png';
 import google from '../assets/logos/google-logo.svg';
 import apple from '../assets/logos/apple-logo.svg';
