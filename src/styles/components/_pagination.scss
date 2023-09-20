@@ -1,0 +1,37 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+  gap: 16px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+
+}
+
+.pagination-list__item {
+  color:#FFF;
+  font-family: Avenir;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.pagination-list__left-arrow {
+  width: 32px;
+  height: 32px;
+}
+.pagination-list__right-arrow {
+  width: 32px;
+  height: 32px;
+}

@@ -1,0 +1,91 @@
+.account {
+
+}
+
+.account-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 52px 0 20px 0;
+  text-align: center;
+}
+
+.account-hero__image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.account-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.account-hero__title {
+  margin-bottom: 8px;
+  color: var(--2, #2B2D36);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.account-hero__subhead {
+  margin: 0;
+  color: var(--2, #2B2D36);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.account-list {
+
+}
+
+.account-list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid#E3E3E3;
+  cursor: pointer;
+}
+
+.account-list__item:last-child {
+  border: none;
+}
+
+.account-list__item-group {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  gap: 8px;
+}
+
+.account-list__item-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.account-list__item-text {
+  color: #2B2D36;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.account__button {
+  width: 100%;
+  margin: 28px 0;
+  border-radius: 8px;
+}

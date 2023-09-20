@@ -25,7 +25,8 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Homepage from './pages/Homepage';
 import Merchant from './pages/Merchant';
-import Profile from './pages/Profile';
+import Account from './pages/Account';
+import Lunchbox from './pages/Lunchbox';
 
 import './styles/styles.scss';
 
@@ -42,7 +43,8 @@ const App: React.FC = () => (
         <Route component={Login} path="/login" exact />
         <Route component={Homepage} path="/home" exact />
         <Route component={Merchant} path="/merchant" exact />
-        <Route component={Profile} path="/profile" exact />
+        <Route component={Account} path="/account" exact />
+        <Route component={Lunchbox} path="/lunchbox" exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

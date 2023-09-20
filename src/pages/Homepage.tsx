@@ -5,6 +5,7 @@ import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 
 import logoName from '../assets/logos/nuncmitto-name.png';
 import RestaurantsSlider from '../components/RestaurantsSlider';
+import FloatingNav from '../components/FloatingNav';
 
 const Homepage: React.FC = () => {
 
@@ -69,11 +70,7 @@ const Homepage: React.FC = () => {
             <IonButton fill="clear">View All</IonButton>
           </IonItemGroup>
           <RestaurantsSlider />
-          <IonItemGroup className="home-shortcuts ion-padding">
-            <IonImg className="home-shortcuts__icon" src="https://via.placeholder.com/24x24" alt="" />
-            <IonImg className="home-shortcuts__icon" src="https://via.placeholder.com/24x24" alt="" />
-            <IonImg className="home-shortcuts__icon" src="https://via.placeholder.com/24x24" alt="" />
-          </IonItemGroup>
+          <FloatingNav />
         </div>
       </IonContent>
     </IonPage>

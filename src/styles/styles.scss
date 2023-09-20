@@ -2,15 +2,19 @@
 @import './mixins';
 @import './globals';
 
+// Components
+@import './components/account';
 @import './components/homepage';
 @import './components/header';
+@import './components/landing';
 @import './components/login';
-@import './components/restaurantSlider';
 @import './components/menuItem';
 @import './components/floatingCart';
+@import './components/lunchbox';
 @import './components/merchant';
 @import './components/merchantCard';
 @import './components/merchantMenu';
-@import './components/landing';
+@import './components/pagination';
+@import './components/restaurantSlider';
 @import './components/section';
 @import './components/signup';

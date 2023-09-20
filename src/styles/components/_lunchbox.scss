@@ -1,0 +1,87 @@
+.lunchbox {
+
+}
+
+.lunchbox-list__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lunchbox__title {
+  margin: 0 auto;
+  color: var(--2, #2B2D36);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.lunchbox__subtitle-group {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 40px;
+}
+
+.lunchbox__subtitle {
+  color: var(--2, #2B2D36);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.lunchbox-list {
+  padding: 20px;
+}
+
+.lunchbox-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--6, #E3E3E3);
+}
+
+.lunchbox-list__icon {
+  width: 56px;
+  height: 56px;
+}
+
+.lunchbox-list__title {
+  color: var(--11, #E75759);
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.lunchbox-list__image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 162px;
+  max-height: 42px;
+  overflow: hidden;
+}
+
+.lunchbox-list__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lunchbox-list__arrow {
+  width: 24px;
+  height: 24px;
+  color: #B5B5B5;
+}
